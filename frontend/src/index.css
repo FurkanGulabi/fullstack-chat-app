@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-input::placeholder,
+.ant-select {
+  color: white !important;
+}
+.ant-input-affix-wrapper {
+  background-color: transparent !important;
+}
+.ant-form-item {
+  width: 100%;
+}
+.ant-select-selector {
+  background-color: transparent !important;
+  color: white !important;
+}
+.ant-select-item-option {
+  color: white !important;
+}
+.ant-radio-inner {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar {
+  cursor: pointer;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  cursor: pointer;
+  background: red;
+}
+
+::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 158, 0.932);
+}

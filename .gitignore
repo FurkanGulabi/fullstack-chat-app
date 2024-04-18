@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+
+# Vite cache
+.cache/
+
+# Build output
+dist/
+
+# IDE / Editor specific files
+.vscode/
+*.suo
+*.ntvs*
