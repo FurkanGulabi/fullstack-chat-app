@@ -76,7 +76,7 @@ export const sendVerificationEmail = async (req, res) => {
                         <div class="container">
                             <h1>Merhaba, ${username}</h1>
                             <p>Hesabınızı doğrulamak için aşağıdaki bağlantıyı kullanabilirsiniz:</p>
-                            <p><a class="btn" href="http://localhost:3000/api/verify/${verifyToken}">Hesabı Doğrula</a></p>
+                            <p><a class="btn" href="https://chat-app-zyzo.onrender.com/api/verify/${verifyToken}">Hesabı Doğrula</a></p>
                             <p>Eğer bu e-postayı talep etmedinizse, bu e-postayı görmezden gelebilirsiniz.</p>
                         </div>
                     </body>
