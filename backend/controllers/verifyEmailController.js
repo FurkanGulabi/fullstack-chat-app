@@ -129,7 +129,7 @@ export const verifyUser = async (req, res) => {
         user.verificationToken = undefined; // Token'i kaldır
         await user.save();
 
-        return res.redirect('http://localhost:5000/profile/?verified=true');
+        return res.redirect('https://chat-app-zyzo.onrender.com/profile/?verified=true');
     } catch (error) {
         console.log("CRITICAL!!! verifyUser Error", error.message);
         return res.status(500).json({ error: "Internal Server Error" });
