@@ -2,6 +2,7 @@ import React from "react";
 import { useAuthContext } from "../../contexts/AuthContext.jsx";
 import useConversation from "../../zustand/useConversation.js";
 import { extractTime } from "../../utils/extractTime.js";
+import { Image } from "antd";
 
 const Message = ({ message }) => {
   const { authUser } = useAuthContext();
@@ -25,13 +26,18 @@ const Message = ({ message }) => {
       <div
         className={`chat-bubble break-words max-w-xs text-white ${bubbleBgColor} ${shakeClass} pb-2 whitespace-pre-wrap`}
       >
+        {message.image ? (
+          <Image src={message.image} className="mb-2" alt="Message Image" />
+        ) : null}
         {message.message}
+
       </div>
       <div className="chat-footer opacity-50 text-xs flex gap-1 items-center">
         {formattedTime}
       </div>
     </div>
   );
+
 };
 
 export default Message;
